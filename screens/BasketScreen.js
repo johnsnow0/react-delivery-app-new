@@ -15,6 +15,8 @@ const BasketScreen = () => {
     const dispatch = useDispatch();
     const basketTotal = useSelector(selectBasketTotal);
 
+console.log('REST===>>>', restaurant);
+
     useMemo(() => {
         const groupedItems = items.reduce((results, item) => {
             (results[item.id] = results[item.id] || []).push(item);
